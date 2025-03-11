@@ -2,9 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tuapp.musica">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Permisos de almacenamiento (si usas archivos locales) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <!-- Permiso para grabación de audio (si lo usas para grabar sonidos o música) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Permiso para acceder a Internet (requerido para Firebase y otras funciones en línea) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permiso para usar la red de datos (si lo necesitas para hacer consultas o subir información) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Activación del almacenamiento en el caso de dispositivos con Android 6.0 o superior -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -24,4 +36,5 @@
             android:label="Editar Letra" />
 
     </application>
+
 </manifest>

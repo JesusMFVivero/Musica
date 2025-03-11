@@ -3,21 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center_vertical">
 
     <EditText
         android:id="@+id/lyricsEditText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:hint="Escribe la letra aquí"
         android:gravity="top|start"
-        android:inputType="textMultiLine"/>
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar Letra"
-        android:layout_gravity="center"/>
-
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+        
 </LinearLayout>

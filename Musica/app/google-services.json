@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579424240490",
+    "project_id": "musica-d7172",
+    "storage_bucket": "musica-d7172.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579424240490:android:01c0e6c161a8916ddc9b13",
+        "android_client_info": {
+          "package_name": "com.tuapp.musica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDphDwH70egH51Ecr-qlyfGHEbgKpgk8PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

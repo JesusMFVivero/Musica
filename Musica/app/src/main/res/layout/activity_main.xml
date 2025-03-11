@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/songTitle"
@@ -12,6 +13,7 @@
         android:text="Título de la canción"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:layout_marginBottom="32dp"  <!-- Añadir un margen inferior para separar del siguiente elemento -->
         android:layout_gravity="center"/>
 
     <Button
@@ -19,6 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reproducir"
+        android:layout_marginBottom="16dp"  <!-- Añadir margen inferior entre botones -->
+        android:paddingHorizontal="24dp"  <!-- Añadir relleno horizontal para mejorar la apariencia -->
         android:layout_gravity="center"/>
 
     <Button
@@ -26,6 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Letra"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:paddingHorizontal="24dp"  <!-- Añadir relleno horizontal para mejorar la apariencia -->
+        android:layout_marginTop="16dp"/>  <!-- Añadir margen superior si se necesita espacio entre botones -->
 
 </LinearLayout>
